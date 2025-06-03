@@ -58,3 +58,24 @@
     transform-origin: center;
 }
 
+.flower-button {
+  padding: 10px 20px;
+  background-color: #ac1e1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: cursive;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: -20px; /* Adjust the position of the button */
+  display: block;
+  margin: 0 auto; /* Center the button */
+  text-align: center;
+
+}
+
+.flower-button:hover {
+  background-color: #d1226b; /* Different color on hover */
+}
