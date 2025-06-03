@@ -1,0 +1,60 @@
+ 
+  .header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  color: #333;
+  position: relative; 
+  z-index: 1; 
+  }
+  
+  
+  .spotify-embed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+  }
+  
+  
+  
+
+  /* Spinning animation */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Disc container */
+.disc {
+    width: 400px; 
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%; 
+    position: center;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    
+}
+
+/* Apply animation to the image */
+.disc img {
+    width: 100%; 
+    height: auto; 
+    animation: spin 6s linear infinite; 
+    transform-origin: center;
+}
+
