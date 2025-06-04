@@ -48,4 +48,16 @@
    });
 </script>
 
+<script>
+   $(document).ready(function() {
+       const homeButton = $('<button>')
+           .text('Back to Homepage')
+           .addClass('home-button')
+           .on('click', function() {
+               window.location.href = 'homepage.html'; // Replace 'index.html' with the actual path to your homepage
+           });
+
+       $('body').append(homeButton);
+   });
+</script>
 </html>
