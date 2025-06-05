@@ -1,10 +1,13 @@
- 
- 
 body {
-  background-color: #6a1b1b; /* Replace with your desired color (e.g., AliceBlue) */
-  margin: 0; /* Removes default margin */
-  font: 16px 'Monospace', monospace; /* Ensures consistent font styling */
+  background-color: #ac1e46;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font: 16px 'Monospace', monospace;
 }
+ 
 
 /* header styles */
  .header {
@@ -24,6 +27,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-top: 1px; /* Adjust the top margin */
+    padding: 10px; /* Add padding for spacing */
     text-align: center;
     
   }
