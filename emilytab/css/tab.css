@@ -1,7 +1,7 @@
  
  
 body {
-  background-color: #8b2525b4; /* Replace with your desired color (e.g., AliceBlue) */
+  background-color: #6a1b1b; /* Replace with your desired color (e.g., AliceBlue) */
   margin: 0; /* Removes default margin */
   font: 16px 'Monospace', monospace; /* Ensures consistent font styling */
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .dropbtn {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(249, 63, 113, 0.8);
   color: black;
   padding: 10px 16px;
   font: 16px 'Monospace', monospace;
