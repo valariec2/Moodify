@@ -52,13 +52,13 @@ p {
   
   /* disc container */
 .disc {
-    width: 400px; 
-    height: 400px; 
+    width: 500px; 
+    height: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px; /* increase this value to move it further up */
-    margin-bottom: 40px; /* increase this value to move it further down */
+    margin-top: 5px; /* increase this value to move it further up */
+    margin-bottom: 10px; /* increase this value to move it further down */
     border-radius: 50%; 
     position: center;
     top: 50%;
