@@ -32,6 +32,7 @@ p {
   text-align: center;
 }
 
+  /* spOTIFY EMBED ! */
 .spotify-wrapper {
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@ p {
   margin-top: 60px;
 }
 
-  /* Spinning animation */
+  /* spinning animation ! */
 @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -49,14 +50,14 @@ p {
     }
   }
   
-  /* Disc container */
+  /* disc container */
 .disc {
     width: 400px; 
     height: 400px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px; /* increase this value to move it further down */
+    margin-top: 10px; /* increase this value to move it further up */
     margin-bottom: 40px; /* increase this value to move it further down */
     border-radius: 50%; 
     position: center;
@@ -66,7 +67,7 @@ p {
     
 }
 
-/* Apply animation to the image */
+/* this applies animation to the image */
 .disc img {
     width: 100%; 
     height: auto; 

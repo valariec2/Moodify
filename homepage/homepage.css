@@ -77,7 +77,7 @@
     .energetic     { top: 70%; left: 25%; background: #f7e2bb; }
     .chill    { top: 15%; right: 20%; background: #b8e6cc; }
     .euphoric   { top: 40%; right: 10%; background: #fdf5a6; }
-    .melodramic  { top: 70%; right: 25%; background: #d5c2f0; }
+    .melodramic  { top: 70%; right: 25%; background: #d5c2f0; clip-path: circle(75%); }
 
 .mTitle {
     background-color: #535353;
@@ -118,4 +118,26 @@ a {
 a:hover {
     color: #1DB954; 
     font-weight: bold; 
+}
+
+/* Dark Mode Button*/
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .container {
+  background-color: #1a1a1a;
+  background-image: none;
+}
+
+.dark-mode .disc,
+.dark-mode .mTitle {
+  border-color: #999;
+  color: #fff;
+  background-color: #333;
+}
+
+.dark-mode a:hover {
+  color: #76ff03;
 }
