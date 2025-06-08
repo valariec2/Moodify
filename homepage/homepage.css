@@ -25,22 +25,12 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('../img/greenbackground.jpeg'); /* Corrected file path */
-      background-size: cover; /* Ensures the image covers the entire background */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents the image from repeating */
-      font-family: 'Comic Sans MS', sans-serif;
-    }
-
-    .container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url('grid-pattern.png');
-      background-size: contain;
+      background-image: url('img/gback.jpg'); 
+      background-size: stretch;
+      background-position: top; 
+      background-repeat: no-repeat; /
+      font-family: .center-disc Arial, Helvetica, sans-serif;
+      font-weight: bold;
     }
 
     .disc {
