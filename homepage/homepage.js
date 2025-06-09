@@ -1,5 +1,6 @@
+
 $(document).ready(function () {
-  $("#darkModeToggle").click(function () {
-    $("body").toggleClass("dark-mode");
+  $('#lightModeToggle').click(function () {
+    $('body').toggleClass('light-mode');
   });
-});
+})
