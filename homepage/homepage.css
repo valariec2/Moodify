@@ -154,6 +154,12 @@ body {
   text-align: center;
 }
 
+.credit{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
 /* Hey, this a comment for the code from Kalani, each link is under "a href" we can manipulate the blue links that would regularly show by reverting it back to its inherent color. */
 /* Text deco is the underlined, which I selected none, I honestly think its a bit ugly. */
 
