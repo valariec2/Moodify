@@ -1,19 +1,45 @@
 .header {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 42%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Correct centering */
   font-weight: bold;
   text-align: center;
   justify-content: center;
-  font-size: 5em;
+  font-size: 4em;
   position: absolute;
   z-index: 10;
   border: 4px solid #535353; /* Adds a border */
   border-radius: 100px; /* Maximum rounded corners */
-  padding: 25px; /* Adds spacing inside the border */
+  padding: 25px; 
   background-color: #535353;
+}
+
+.credit {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #535353;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition for hover effects */
+  display: inline-flex; /* Ensures proper alignment */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Adds pointer cursor for interactivity */
+}
+
+.credit:hover {
+  background-color: #1db954; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.credit-container {
+  position: absolute;
+  top: 5%; /* Position the Credit button near the top */
+  right: 5%; /* Align the Credit button to the right */
 }
 
 .subheader {
@@ -24,7 +50,7 @@
   border-radius: 100px; /* Maximum rounded corners */
   padding: 20px; /* Adds spacing inside the border */
   background-color: #1db954;
-  top: 212px;
+  top: 550px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -46,7 +72,7 @@ body {
 }
 
 .disc {
-  position: absolute;
+  position: absolute; /* Position the discs */
   width: 215px;
   height: 215px;
   border-radius: 50%;
@@ -57,10 +83,15 @@ body {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border: 4px solid #333;
-  animation: spin 6s linear infinite;
+  border: 4px solid transparent;
+  animation: spin 6s linear infinite; /* Rotates the disc */
   transition: transform 0.3s;
   overflow: hidden;
+}
+
+.disc:hover {
+  border-color: #1db954; /* Green border on hover */
+  transform: scale(1.1); /* Slightly enlarges the disc on hover */
 }
 
 .disc img {
@@ -85,23 +116,26 @@ body {
 }
 
 .center-disc {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  border: 6px solid #333;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px; 
+  border: 2px solid transparent; 
+  background-color: #535353; 
+  color: white; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.center-disc img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.center-disc:hover {
+  background-color: #1db954; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .disc span {
@@ -187,10 +221,7 @@ a {
 
 /* K: coming back for another comment, so once again the "a" links are selected and in the case each time the mouse hovers over it will turn green.*/
 /* K: we should really change these links into the disc idea, meeting on May 26*/
-a:hover {
-  color: #1DB954;
-  font-weight: bold;
-}
+
 
 /* Dark Mode Button*/
 .dark-mode {
@@ -240,5 +271,67 @@ a:hover {
   background-color: #b3b3b3; 
   border-color: #333; 
   color: #000; 
+}
+
+.button-container {
+  position: absolute;
+  top: 5%; 
+  right: 10%; /* Align the Lite Mode button to the right */
+  display: flex; /* Use flexbox for horizontal alignment */
+}
+
+.text-box {
+  position: absolute; /* Position the text boxes independently */
+  width: 120px; /* Width of the text box */
+  height: 40px; /* Height of the text box */
+  border-radius: 5px; /* Rounded edges */
+  background-color: #535353; /* Background color */
+  color: white; /* Text color */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2; /* Ensure text box is above the disc */
+}
+
+/* Positioning for each text box */
+.sad-text {
+  top: 15%; /* Adjust position relative to the container */
+  left: 20%;
+}
+
+.romantic-text {
+  top: 40%;
+  left: 10%;
+}
+
+.energetic-text {
+  top: 70%;
+  left: 25%;
+}
+
+.chill-text {
+  top: 15%;
+  right: 20%;
+}
+
+.euphoric-text {
+  top: 40%;
+  right: 10%;
+}
+
+.melodramic-text {
+  top: 70%;
+  right: 25%;
+}
+
+/* Hover effect for text boxes */
+.text-box:hover {
+  background-color: #1db954; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
