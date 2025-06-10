@@ -1,17 +1,17 @@
 .header {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  top: 42%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Correct centering */
+  top: 42%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   font-weight: bold;
   text-align: center;
   justify-content: center;
   font-size: 4em;
   position: absolute;
   z-index: 10;
-  border: 4px solid #535353; /* Adds a border */
-  border-radius: 100px; /* Maximum rounded corners */
+  border: 4px solid #535353; 
+  border-radius: 100px; 
   padding: 25px; 
   background-color: #535353;
 }
@@ -24,31 +24,31 @@
   padding: 10px 20px;
   border-radius: 25px;
   background-color: #535353;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition for hover effects */
-  display: inline-flex; /* Ensures proper alignment */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  display: inline-flex; 
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* Adds pointer cursor for interactivity */
+  cursor: pointer; 
 }
 
 .credit:hover {
-  background-color: #1db954; /* Change background color on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #1db954; 
+  transform: scale(1.1); 
 }
 
 .credit-container {
   position: absolute;
-  top: 5%; /* Position the Credit button near the top */
-  right: 5%; /* Align the Credit button to the right */
+  top: 5%; 
+  right: 5%; 
 }
 
 .subheader {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #121212;
-  border: 4px solid #1db954; /* Adds a border */
-  border-radius: 100px; /* Maximum rounded corners */
-  padding: 20px; /* Adds spacing inside the border */
+  border: 4px solid #1db954; 
+  border-radius: 100px;
+  padding: 20px; 
   background-color: #1db954;
   top: 550px;
   left: 50%;
@@ -64,19 +64,19 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* Light text color */
+  background-color: #121212; 
+  color: #ffffff; 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  transition: background-color 0.5s ease, color 0.5s ease; /* Gradual transition */
-  overflow-y: auto; /* Enable vertical scrolling */
+  transition: background-color 0.5s ease, color 0.5s ease; 
+  overflow-y: auto; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the page is tall enough */
+  min-height: 100vh; 
 }
 
 .disc {
-  position: absolute; /* Position the discs */
+  position: absolute; 
   width: 215px;
   height: 215px;
   border-radius: 50%;
@@ -88,21 +88,21 @@ body {
   text-align: center;
   text-decoration: none;
   border: 4px solid transparent;
-  animation: spin 6s linear infinite; /* Rotates the disc */
+  animation: spin 6s linear infinite; 
   transition: transform 0.3s;
   overflow: hidden;
 }
 
 .disc:hover {
-  border-color: #1db954; /* Green border on hover */
-  transform: scale(1.1); /* Slightly enlarges the disc on hover */
+  border-color: #1db954; 
+  transform: scale(1.1); 
 }
 
 .disc img {
-  width: 75%; /* Makes the image fill the disc */
-  height: 75%; /* Makes the image fill the disc */
-  object-fit: cover; /* Ensures the image scales proportionally */
-  border-radius: 50%; /* Ensures the image is circular */
+  width: 75%; 
+  height: 75%;
+  object-fit: cover;
+  border-radius: 50%; 
 }
 
 .disc:hover {
@@ -138,8 +138,8 @@ body {
 }
 
 .center-disc:hover {
-  background-color: #1db954; /* Change background color on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #1db954; 
+  transform: scale(1.1); 
 }
 
 .disc span {
@@ -252,14 +252,14 @@ a {
 /* Light Mode Styles */
 /* Light Mode k: holy shit this took a while to find out, anyways [comeback to explain later... time crunch] */
 .light-mode {
-  background-color: #b3b3b3; /* Light background */
-  color: #121212; /* Dark text color */
+  background-color: #b3b3b3; 
+  color: #121212; 
 }
 
 /* Container Transition */
 .container {
-  transition: background-color 0.5s ease, color 0.5s ease; /* Gradual transition */
-  flex: 1; /* Allow the main content to take up available space */
+  transition: background-color 0.5s ease, color 0.5s ease; 
+  flex: 1; 
 }
 
 .light-mode .container {
@@ -281,17 +281,17 @@ a {
 .button-container {
   position: absolute;
   top: 5%; 
-  right: 10%; /* Align the Lite Mode button to the right */
-  display: flex; /* Use flexbox for horizontal alignment */
+  right: 10%; 
+  display: flex; 
 }
 
 .text-box {
-  position: absolute; /* Position the text boxes independently */
-  width: 120px; /* Width of the text box */
-  height: 40px; /* Height of the text box */
-  border-radius: 5px; /* Rounded edges */
-  background-color: #535353; /* Background color */
-  color: white; /* Text color */
+  position: absolute; 
+  width: 120px; 
+  height: 40px; 
+  border-radius: 5px; 
+  background-color: #535353; 
+  color: white; 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 0.9em;
@@ -300,12 +300,12 @@ a {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 2; /* Ensure text box is above the disc */
+  z-index: 2; 
 }
 
 /* Positioning for each text box */
 .sad-text {
-  top: 15%; /* Adjust position relative to the container */
+  top: 15%; 
   left: 20%;
 }
 
@@ -336,75 +336,75 @@ a {
 
 /* Hover effect for text boxes */
 .text-box:hover {
-  background-color: #1db954; /* Change background color on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: #1db954; 
+  transform: scale(1.1); 
 }
 
 #playlists-container {
-  display: flex; /* Use flexbox for horizontal alignment */
-  flex-wrap: wrap; /* Allow wrapping if content overflows */
-  justify-content: center; /* Center-align the playlists */
-  align-items: flex-start; /* Align playlists at the top */
-  margin: 10px auto; /* Reduce spacing above and center horizontally */
-  padding: 5px; /* Reduce padding */
-  max-width: 100%; /* Ensure it spans the width of the page */
-  position: relative; /* Ensure it stays in the document flow */
-  clear: both; /* Prevent floating elements from interfering */
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: flex-start; 
+  margin: 10px auto; 
+  padding: 5px; 
+  max-width: 100%; 
+  position: relative; 
+  clear: both; 
 }
 
 .source-section {
-  margin: 3px; /* Spacing between sections */
-  border: 1px solid #535353; /* Border for separation */
-  border-radius: 3px; /* Rounded corners */
-  padding: 3px; /* Padding inside the section */
-  background-color: #333; /* Background color */
-  color: white; /* Text color */
-  width: 120px; /* Width of each section */
-  text-align: center; /* Center-align content */
+  margin: 3px; 
+  border: 1px solid #535353;
+  border-radius: 3px; 
+  padding: 3px; 
+  background-color: #333; 
+  color: white;
+  width: 120px; 
+  text-align: center; 
 }
 
 .source-section h2 {
-  font-size: 0.8em; /* Reduce heading size */
-  margin-bottom: 3px; /* Reduce margin */
+  font-size: 0.8em; 
+  margin-bottom: 3px; 
 }
 
 .playlist {
-  margin-bottom: 3px; /* Reduce spacing between playlists */
+  margin-bottom: 3px; 
 }
 
 .playlist img {
-  width: 100%; /* Ensure images fit the section */
-  border-radius: 3px; /* Rounded corners for images */
-  margin-bottom: 3px; /* Spacing below images */
+  width: 100%; 
+  border-radius: 3px; 
+  margin-bottom: 3px; 
 }
 
 .playlist h3 {
-  font-size: 0.7em; /* Playlist name size */
-  margin: 3px 0; /* Spacing around playlist name */
+  font-size: 0.7em; 
+  margin: 3px 0; 
 }
 
 .playlist p {
-  font-size: 0.6em; /* Follower count size */
-  margin: 3px 0; /* Spacing around follower count */
+  font-size: 0.6em; 
+  margin: 3px 0; 
 }
 
 .playlist a {
-  font-size: 0.6em; /* Link size */
-  color: #1db954; /* Spotify green for links */
+  font-size: 0.6em; 
+  color: #1db954; 
   text-decoration: none;
 }
 
 .playlist a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; 
 }
 
 .api-section {
-  margin: 50px auto; /* Add spacing above and center horizontally */
+  margin: 50px auto; 
   text-align: center;
   color: white;
-  position: relative; /* Ensure it stays in the document flow */
-  bottom: 0; /* Push it to the bottom */
-  clear: both; /* Prevent overlapping with other elements */
+  position: relative; 
+  bottom: 0; 
+  clear: both; 
 }
 
 .api-section input {
@@ -430,7 +430,7 @@ a {
 #result {
   margin-top: 20px;
   text-align: center;
-  max-width: 80%; /* Limit width for better readability */
+  max-width: 80%; 
   margin-left: auto;
   margin-right: auto;
 }
