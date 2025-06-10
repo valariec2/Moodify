@@ -1,13 +1,12 @@
+
 body {
-  background-color: #ac1e46;
-  background-size: cover;
+  background-image: url('/Users/emilyblanco/Documents/GitHub/Moodify/emilytab/back.png');
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
-  margin: 0;
   font: 16px 'Monospace', monospace;
 }
- 
+
 
 /* header styles */
  .header {
