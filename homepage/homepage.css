@@ -246,7 +246,7 @@ a {
 }
 
 /* Light Mode Styles */
-/* Light Mode k: holy shit this took a while to find out, anyways [comback to explain later... time crunch] */
+/* Light Mode k: holy shit this took a while to find out, anyways [comeback to explain later... time crunch] */
 .light-mode {
   background-color: #b3b3b3; /* Light background */
   color: #121212; /* Dark text color */
@@ -334,4 +334,67 @@ a {
   background-color: #1db954; /* Change background color on hover */
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+#playlists-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-wrap: wrap; /* Allow wrapping if content overflows */
+  justify-content: center; /* Center-align the playlists */
+  align-items: flex-start; /* Align playlists at the top */
+  margin: 10px auto; /* Reduce spacing above and center horizontally */
+  padding: 5px; /* Reduce padding */
+  max-width: 100%; /* Ensure it spans the width of the page */
+  position: relative; /* Ensure it stays in the document flow */
+  clear: both; /* Prevent floating elements from interfering */
+}
+
+.source-section {
+  margin: 3px; /* Spacing between sections */
+  border: 1px solid #535353; /* Border for separation */
+  border-radius: 3px; /* Rounded corners */
+  padding: 3px; /* Padding inside the section */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  width: 120px; /* Width of each section */
+  text-align: center; /* Center-align content */
+}
+
+.source-section h2 {
+  font-size: 0.8em; /* Reduce heading size */
+  margin-bottom: 3px; /* Reduce margin */
+}
+
+.playlist {
+  margin-bottom: 3px; /* Reduce spacing between playlists */
+}
+
+.playlist img {
+  width: 100%; /* Ensure images fit the section */
+  border-radius: 3px; /* Rounded corners for images */
+  margin-bottom: 3px; /* Spacing below images */
+}
+
+.playlist h3 {
+  font-size: 0.7em; /* Playlist name size */
+  margin: 3px 0; /* Spacing around playlist name */
+}
+
+.playlist p {
+  font-size: 0.6em; /* Follower count size */
+  margin: 3px 0; /* Spacing around follower count */
+}
+
+.playlist a {
+  font-size: 0.6em; /* Link size */
+  color: #1db954; /* Spotify green for links */
+  text-decoration: none;
+}
+
+.playlist a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+html, body {
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
 
