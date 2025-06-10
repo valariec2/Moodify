@@ -69,6 +69,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   transition: background-color 0.5s ease, color 0.5s ease; /* Gradual transition */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page is tall enough */
 }
 
 .disc {
@@ -255,6 +259,7 @@ a {
 /* Container Transition */
 .container {
   transition: background-color 0.5s ease, color 0.5s ease; /* Gradual transition */
+  flex: 1; /* Allow the main content to take up available space */
 }
 
 .light-mode .container {
@@ -393,8 +398,41 @@ a {
   text-decoration: underline; /* Add underline on hover */
 }
 
-html, body {
-  overflow-y: auto; /* Enables vertical scrolling */
+.api-section {
+  margin: 50px auto; /* Add spacing above and center horizontally */
+  text-align: center;
+  color: white;
+  position: relative; /* Ensure it stays in the document flow */
+  bottom: 0; /* Push it to the bottom */
+  clear: both; /* Prevent overlapping with other elements */
+}
+
+.api-section input {
+  padding: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.api-section button {
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.api-section button:hover {
+  background-color: #14843b;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 80%; /* Limit width for better readability */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
