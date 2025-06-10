@@ -7,16 +7,37 @@
   <link rel="stylesheet" type="text/css" href="../homepage/homepage.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../homepage/homepage.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      flex: 1; /* This allows the container to take up available space */
+    }
+
+  </style>
 </head>
-<h1 class="header"> Moodify</h1>
-<h2 class="subheader">A Project by Pzipora, Emily, Kalani, Nirvana, Valarie, Siyan.</h2>
+
 <body>
+  <!-- Move playlists-container to the top -->
+  <div id="playlists-container">
+    <!-- Playlists will be dynamically added here -->
+  </div>
+
+  <h1 class="header"> Moodify</h1>
+  <h2 class="subheader">A Project by Pzipora, Emily, Kalani, Nirvana, Valarie, Siyan.</h2>
+  
   <div class="button-container">
     <button class="center-disc" id="lightModeToggle">Lite Mode</button>
   </div>
+  
   <div class="credit-container">
     <a class="credit" href="../creditspage/">Credit</a>
   </div>
+  
   <div class="container">
     <a href="../pziporatab/tabindex.html" class="disc sad">
       <img src="img/pziDisc.png" width="300" height="180" alt="drama">
